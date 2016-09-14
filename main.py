@@ -49,7 +49,7 @@ for i in range(eps.size - 3):
     ds.addSample( (eps[i], sigma[i], eps[i+1], sigma[i+1], eps[i+2], sigma[i+2], eps[i+3]), sigma[i+3])
 
 trainer = BackpropTrainer(net, ds)
-trainer.trainEpochs(1000)
+trainer.trainEpochs(5000)
 
 
 sigma_res = np.empty_like(eps)
